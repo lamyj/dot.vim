@@ -43,6 +43,7 @@ filetype plugin on
 " 0-9, a-z, A-Z and _ are special)
 set hlsearch
 nnoremap / /\v
+nnoremap <leader><space> :noh<cr>
 
 " Configure status line
 set statusline=%F      " filename
