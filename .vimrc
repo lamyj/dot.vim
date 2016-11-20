@@ -31,10 +31,12 @@ vnoremap <leader>( :call SurroundVisual("(", ")") <cr>
 set number
 nnoremap <F2> :set number! foldcolumn=0<CR>
 
-" Global defaults: indent by 4 spaces, highlight syntax, don't fold
+" Global defaults: indent by 4 spaces, highlight syntax, don't fold, backspace
+" over anything
 set expandtab tabstop=8 softtabstop=4 shiftwidth=4 autoindent
 syntax on
 set foldlevelstart=100
+set backspace=indent,eol,start
 
 " Make sure ftdetect files are loaded
 filetype plugin on
