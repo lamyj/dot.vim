@@ -22,10 +22,23 @@ nnoremap <leader>" :call SurroundNormal('"', '"') <cr>
 nnoremap <leader>' :call SurroundNormal("'", "'") <cr>
 nnoremap <leader>( :call SurroundNormal("(", ")") <cr>
 nnoremap <leader>) :call SurroundNormal("(", ")") <cr>
+nnoremap <leader>[ :call SurroundNormal("[", "]") <cr>
+nnoremap <leader>] :call SurroundNormal("[", "]") <cr>
+nnoremap <leader>{ :call SurroundNormal("{", "}") <cr>
+nnoremap <leader>} :call SurroundNormal("{", "}") <cr>
+nnoremap <leader>< :call SurroundNormal("<", ">") <cr>
+nnoremap <leader>> :call SurroundNormal("<", ">") <cr>
 
 vnoremap <leader>" :call SurroundVisual('"', '"') <cr>
 vnoremap <leader>' :call SurroundVisual("'", "'") <cr>
 vnoremap <leader>( :call SurroundVisual("(", ")") <cr>
+vnoremap <leader>) :call SurroundVisual("(", ")") <cr>
+vnoremap <leader>[ :call SurroundVisual("[", "]") <cr>
+vnoremap <leader>] :call SurroundVisual("[", "]") <cr>
+vnoremap <leader>{ :call SurroundVisual("{", "}") <cr>
+vnoremap <leader>} :call SurroundVisual("{", "}") <cr>
+vnoremap <leader>< :call SurroundVisual("<", ">") <cr>
+vnoremap <leader>> :call SurroundVisual("<", ">") <cr>
 
 " Line numbers and disabling them
 set number
@@ -59,4 +72,7 @@ set statusline=%F\ %m\ %r%y%=%v,%l/%L
 " Always show status line
 set laststatus=2
 
+" Don't wrap text, set column marker
+set textwidth=0
+set colorcolumn=80
 
